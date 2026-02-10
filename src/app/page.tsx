@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -182,12 +183,17 @@ export default function HomePage() {
       <section className="bg-white py-20 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-5">
-            {/* Left — Photo placeholder (2 cols) */}
+            {/* Left — Pastor Photo (2 cols) */}
             <div className="lg:col-span-2">
-              <div className="flex aspect-[3/4] items-center justify-center rounded-2xl bg-gradient-to-br from-tierra to-oro shadow-lg">
-                <p className="px-6 text-center font-heading text-2xl font-bold text-white drop-shadow-md">
-                  Pastor Emmanuel Lopez
-                </p>
+              <div className="relative aspect-[3/4] overflow-hidden rounded-2xl shadow-lg">
+                <Image
+                  src="/images/pastor.jpg"
+                  alt="Pastor Emmanuel Lopez"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  priority
+                />
               </div>
             </div>
 
@@ -202,26 +208,20 @@ export default function HomePage() {
               </h2>
 
               <p className="mt-2 text-lg text-tierra">
-                Sirviendo a la Comunidad Hispana desde 2015
+                Continuando el Legado de Roberto Martinez
               </p>
 
               <div className="mt-6 space-y-4 text-oscuro/70 leading-relaxed">
                 <p>
-                  Nacido y criado en Monterrey, Mexico, el Pastor Emmanuel sintio el llamado de Dios desde
-                  joven. Despues de completar sus estudios en la Universidad Autonoma de Nuevo Leon (UANL),
-                  decidio dedicar su vida al ministerio pastoral, con un profundo deseo de servir a la
-                  comunidad hispana.
+                  Daniela Martinez es la esposa de nuestro pastor, quien vino a apoyar a su suegro,
+                  Roberto Martinez — el fundador que inicio esta iglesia hace mas de 20 anos en el
+                  area de Cobb County. Roberto ha partido con el Senor, pero la iglesia permanece como
+                  un pilar para nuestra comunidad.
                 </p>
                 <p>
-                  Con una vision clara de fortalecer a las familias hispanas en Georgia, el Pastor Emmanuel
-                  fundo la Iglesia Casa del Alfarero como un lugar de refugio, esperanza y transformacion.
-                  Su ensenanza se centra en la Palabra de Dios aplicada a la vida diaria, ayudando a cada
-                  persona a descubrir el proposito que Dios tiene para ellos.
-                </p>
-                <p>
-                  Junto a su familia, el Pastor Emmanuel ha construido una comunidad de fe donde cada miembro
-                  es valorado y equipado para hacer una diferencia en su hogar, su trabajo y su comunidad.
-                  Su pasion es ver vidas transformadas por el poder del Evangelio.
+                  Somos una iglesia pequena pero muy unida. El Pastor Emmanuel lidera con ensenanza
+                  biblica solida y un corazon pastoral genuino, ayudando a cada persona a descubrir
+                  el proposito que Dios tiene para ellos.
                 </p>
               </div>
 
@@ -289,19 +289,32 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Sermon info */}
-          <div className="mx-auto mt-8 max-w-2xl text-center">
-            <h3 className="font-heading text-2xl font-bold">
-              El Alfarero Tiene un Plan para Ti
-            </h3>
-            <p className="mt-2 text-sm text-white/60">
-              Domingo, 2 de Febrero 2026
-            </p>
-            <p className="mt-4 text-white/80 leading-relaxed">
-              En este poderoso mensaje, el Pastor Emmanuel nos recuerda que Dios, como el gran Alfarero,
-              tiene un proposito unico para cada uno de nosotros. Aunque las pruebas nos moldean, Su mano
-              nunca nos suelta.
-            </p>
+          {/* Sermon info with notepad image */}
+          <div className="mx-auto mt-8 max-w-4xl">
+            <div className="grid gap-8 lg:grid-cols-2 items-center">
+              <div className="text-center lg:text-left">
+                <h3 className="font-heading text-2xl font-bold">
+                  El Alfarero Tiene un Plan para Ti
+                </h3>
+                <p className="mt-2 text-sm text-white/60">
+                  Domingo, 2 de Febrero 2026
+                </p>
+                <p className="mt-4 text-white/80 leading-relaxed">
+                  En este poderoso mensaje, el Pastor Emmanuel nos recuerda que Dios, como el gran Alfarero,
+                  tiene un proposito unico para cada uno de nosotros. Aunque las pruebas nos moldean, Su mano
+                  nunca nos suelta.
+                </p>
+              </div>
+              <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-lg">
+                <Image
+                  src="/images/notepad.jpg"
+                  alt="Notas del sermon pastoral"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+            </div>
           </div>
 
           <div className="mt-10 text-center">
@@ -406,14 +419,14 @@ export default function HomePage() {
               </div>
             </article>
 
-            {/* Event 4 */}
+            {/* Event 4 — Men's Group */}
             <article className="group relative overflow-hidden rounded-xl border border-oscuro/10 bg-white p-6 transition hover:shadow-lg">
               <div className="absolute right-4 top-4 rounded-lg bg-gradient-to-br from-oro to-yellow-500 px-3 py-1.5 text-center shadow">
                 <span className="block text-xs font-bold text-oscuro">MAR</span>
-                <span className="block text-lg font-bold leading-tight text-oscuro">1</span>
+                <span className="block text-lg font-bold leading-tight text-oscuro">7</span>
               </div>
               <div className="pt-2">
-                <h3 className="font-heading text-xl font-bold text-oscuro">Desayuno de Hombres</h3>
+                <h3 className="font-heading text-xl font-bold text-oscuro">Grupo de Hombres</h3>
                 <p className="mt-2 text-sm text-oscuro/60">
                   <span className="font-medium">8:00 AM</span> &middot; Salon de Eventos
                 </p>
@@ -428,6 +441,31 @@ export default function HomePage() {
                 </a>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================
+          SECTION 5B — Congregation Photo
+          ============================================================ */}
+      <section className="bg-white py-16 md:py-20">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="font-heading text-4xl font-bold text-oscuro md:text-5xl">
+              Nuestra Familia
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-lg text-oscuro/70">
+              Una iglesia pequena pero muy unida
+            </p>
+          </div>
+          <div className="relative aspect-video overflow-hidden rounded-2xl shadow-xl">
+            <Image
+              src="/images/group.jpg"
+              alt="Congregacion de la Iglesia Casa del Alfarero"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1280px) 100vw, 1280px"
+            />
           </div>
         </div>
       </section>

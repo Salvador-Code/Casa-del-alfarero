@@ -189,15 +189,6 @@ const ministries: Ministry[] = [
   },
   {
     category: "JOVENES",
-    title: "Grupo de Jovenes",
-    audience: "13-17 anos",
-    schedule: "Viernes 8:00 PM",
-    description:
-      "Un espacio para adolescentes con juegos, ensenanza relevante y comunidad autentica donde pueden crecer en fe junto a sus amigos.",
-    icon: <YouthIcon />,
-  },
-  {
-    category: "JOVENES",
     title: "Ministerio Universitario",
     audience: "18-25 anos",
     schedule: "Martes 7:00 PM",
@@ -225,30 +216,12 @@ const ministries: Ministry[] = [
   },
   {
     category: "ADULTOS",
-    title: "Desayuno de Hombres",
+    title: "Grupo de Hombres",
     audience: "Hombres adultos",
-    schedule: "Primer sabado del mes, 8:00 AM",
+    schedule: "Sabados, una vez al mes",
     description:
-      "Companerismo, desayuno y una breve ensenanza para hombres que desean crecer en su fe y liderazgo espiritual.",
+      "Companerismo y una breve ensenanza para hombres que desean crecer en su fe y liderazgo espiritual.",
     icon: <CoffeeIcon />,
-  },
-  {
-    category: "ESPECIALES",
-    title: "Ministerio de Matrimonios",
-    audience: "Parejas casadas",
-    schedule: "Taller trimestral",
-    description:
-      "Talleres y eventos disenados para fortalecer la relacion matrimonial, con herramientas practicas y principios biblicos.",
-    icon: <RingsIcon />,
-  },
-  {
-    category: "ESPECIALES",
-    title: "Ministerio de Oracion",
-    audience: "Toda la congregacion",
-    schedule: "Sabados 6:00 AM",
-    description:
-      "Un tiempo dedicado a la intercesion, alabanza y busqueda de la presencia de Dios. Oramos por la iglesia, la ciudad y las naciones.",
-    icon: <PrayerIcon />,
   },
   {
     category: "ESPECIALES",
@@ -280,28 +253,12 @@ const upcomingEvents: CalendarEvent[] = [
     location: "Santuario Principal",
   },
   {
-    date: "21",
-    day: "Feb 21",
-    month: "Feb",
-    title: "Retiro de Jovenes",
-    time: "Todo el dia",
-    location: "Camp Georgia",
-  },
-  {
-    date: "28",
-    day: "Feb 28",
-    month: "Feb",
-    title: "Taller de Matrimonios",
-    time: "6:00 PM",
-    location: "Salon Fellowship",
-  },
-  {
-    date: "1",
-    day: "Mar 1",
+    date: "7",
+    day: "Mar 7",
     month: "Mar",
-    title: "Desayuno de Hombres",
+    title: "Grupo de Hombres",
     time: "8:00 AM",
-    location: "Cocina",
+    location: "Salon de Eventos",
   },
   {
     date: "8",

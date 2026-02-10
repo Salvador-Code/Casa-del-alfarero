@@ -90,7 +90,7 @@ export default function Footer() {
             <div className="flex items-center gap-4 pt-2">
               {/* Facebook */}
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/casadelalfareroatl"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"

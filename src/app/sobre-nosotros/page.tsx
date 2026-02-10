@@ -79,55 +79,49 @@ const pillars = [
 
 const timelineEvents = [
   {
-    year: "2015",
-    title: "Primeras Reuniones",
+    year: "2004",
+    title: "Los Comienzos",
     description:
-      "12 familias se reunieron por primera vez en la sala del Pastor Emmanuel, compartiendo oracion, alabanza y la vision de una iglesia para la comunidad hispana del area metropolitana de Atlanta.",
+      "Roberto Martinez, el fundador, comenzo esta iglesia hace mas de 20 anos en el area de Cobb County, Georgia, con la vision de crear un hogar espiritual para la comunidad hispana.",
   },
   {
-    year: "2017",
-    title: "Primer Local Permanente",
+    year: "2015",
+    title: "Crecimiento y Consolidacion",
     description:
-      "Establecimos nuestro primer local permanente en Powder Springs, Georgia, marcando un nuevo capitulo en el crecimiento de nuestra congregacion y la expansion de nuestros ministerios.",
+      "La iglesia crecio bajo el liderazgo de Roberto, estableciendose como un pilar para la comunidad hispana en el area metropolitana de Atlanta.",
   },
   {
     year: "2020",
-    title: "Expansion",
+    title: "Expansion Digital",
     description:
-      "En medio de la pandemia, anadimos servicios multilingues y expandimos nuestro alcance digital, llevando la Palabra de Dios a cientos de hogares a traves de plataformas en linea.",
+      "En medio de la pandemia, expandimos nuestro alcance digital, llevando la Palabra de Dios a hogares a traves de plataformas en linea.",
   },
   {
     year: "2023",
-    title: "177 Familias Unidas",
+    title: "Nueva Generacion",
     description:
-      "Nuestra congregacion crecio hasta alcanzar 177 familias activas, fortaleciendo nuestros ministerios de jovenes, mujeres, varones y ninos con lideres comprometidos.",
+      "Daniela Martinez, esposa de nuestro pastor, quien vino a apoyar a su suegro Roberto Martinez, continua el legado. Roberto ha partido con el Senor, pero la iglesia sigue siendo un pilar para nuestra comunidad.",
   },
   {
     year: "2026",
-    title: "Vision Regional",
+    title: "Familia Unida",
     description:
-      "Planificamos la expansion con un segundo campus en el estado de Georgia, llevando la mision de Casa del Alfarero a nuevas comunidades y extendiendo el Reino de Dios.",
+      "Somos una iglesia pequena pero muy unida. Seguimos creciendo juntos en fe, amor y comunidad, honrando el legado de nuestro fundador.",
   },
 ];
 
 const smallLeaders = [
   {
-    name: "Sergio Rodriguez",
-    role: "Pastor Asociado",
+    name: "Daniela Martinez",
+    role: "Esposa del Pastor / Lider de Adoracion",
     description:
-      "Lidera la consejeria pastoral y los grupos de vida, acompanando a las familias en su crecimiento espiritual y fortaleciendo los lazos de comunidad.",
+      "Daniela Martinez es la esposa de nuestro pastor, quien vino a apoyar a su suegro Roberto Martinez, el fundador de esta iglesia. Guia al equipo de alabanza con excelencia y uncion.",
   },
   {
     name: "Laysha Rodriguez",
     role: "Lider de Ministerio de Mujeres",
     description:
       "Dirige el ministerio de mujeres con pasion, creando espacios de discipulado, sanidad emocional y empoderamiento espiritual para cada mujer.",
-  },
-  {
-    name: "Daniela Martinez",
-    role: "Lider de Adoracion",
-    description:
-      "Guia al equipo de alabanza con excelencia y uncion, creando atmosferas de adoracion genuina donde la presencia de Dios se manifiesta poderosamente.",
   },
 ];
 
@@ -268,6 +262,7 @@ export default function SobreNosotrosPage() {
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/80">
             Descubre como Dios ha moldeado a Casa del Alfarero desde sus
             humildes comienzos hasta convertirse en una familia de fe vibrante.
+            Somos una iglesia pequena pero muy unida.
           </p>
 
           {/* Breadcrumb */}
@@ -452,18 +447,17 @@ export default function SobreNosotrosPage() {
                 Pastor Emmanuel
               </h3>
               <p className="mt-4 leading-relaxed text-oscuro/70">
-                Originario de Monterrey, Mexico, el Pastor Emmanuel se formo
-                academicamente en la Universidad Autonoma de Nuevo Leon (UANL)
-                antes de responder al llamado de Dios al ministerio pastoral.
-                Con una profunda vision por el ministerio hispano en los Estados
-                Unidos, fundo Casa del Alfarero en 2015 con el proposito de
-                crear un hogar espiritual donde cada persona pueda ser moldeada
-                por las manos del Maestro Alfarero.
+                El Pastor Emmanuel vino a apoyar a su suegro, Roberto
+                Martinez, el fundador que inicio esta iglesia hace mas de 20
+                anos en el area de Cobb County. Roberto ha partido con el
+                Senor, pero la iglesia permanece como un pilar para nuestra
+                comunidad.
               </p>
               <p className="mt-4 leading-relaxed text-oscuro/70">
                 Su liderazgo se caracteriza por la ensenanza biblica solida, el
                 amor pastoral genuino y una fe inquebrantable en el poder
-                transformador de Dios.
+                transformador de Dios. Somos una iglesia pequena pero muy
+                unida.
               </p>
               <blockquote className="mt-6 border-l-4 border-oro pl-4 italic text-oscuro/80">
                 &ldquo;Somos barro en las manos del Maestro Alfarero&rdquo;

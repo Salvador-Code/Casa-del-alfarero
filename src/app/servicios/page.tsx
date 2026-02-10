@@ -405,12 +405,12 @@ export default function ServiciosPage() {
                         Escuela Dominical &mdash; 9:30 AM
                       </span>
                       <span className="rounded-full bg-verde/10 px-4 py-1.5 font-body text-sm font-semibold text-verde">
-                        Ministerio Infantil
-                      </span>
-                      <span className="rounded-full bg-azul/10 px-4 py-1.5 font-body text-sm font-semibold text-azul">
-                        Ministerio de Jovenes
+                        Ministerio Infantil (edades ~3-4 a 12)
                       </span>
                     </div>
+                    <p className="mt-3 font-body text-sm text-oscuro/60 italic">
+                      Nota: Por el momento no contamos con programas para adolescentes (13-17 anos).
+                    </p>
                   </div>
 
                   {/* CTA */}
@@ -643,7 +643,7 @@ export default function ServiciosPage() {
               Ver en YouTube
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/casadelalfareroatl"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg bg-white px-8 py-3 font-body font-semibold text-azul shadow-md transition hover:-translate-y-0.5 hover:shadow-lg"

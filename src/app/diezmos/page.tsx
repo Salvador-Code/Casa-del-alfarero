@@ -218,43 +218,10 @@ export default function DiezmosPage() {
               Otro Monto
             </p>
 
-            {/* Designation */}
-            <div className="mt-8">
-              <label className="text-sm font-semibold text-oscuro">
-                Designar a:
-              </label>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {[
-                  "Diezmo",
-                  "Ofrenda General",
-                  "Misiones",
-                  "Construccion/Mejoras",
-                  "Ayuda Benevolencia",
-                ].map((designation) => (
-                  <span
-                    key={designation}
-                    className="cursor-pointer rounded-full border border-oscuro/20 px-4 py-2 text-sm text-oscuro/70 transition hover:border-tierra hover:bg-tierra/5 hover:text-tierra"
-                  >
-                    {designation}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Processing fee checkbox */}
-            <div className="mt-8 flex items-start gap-3">
-              <input
-                type="checkbox"
-                id="processingFee"
-                className="mt-1 h-4 w-4 rounded border-gray-300"
-              />
-              <label
-                htmlFor="processingFee"
-                className="text-sm text-oscuro/70"
-              >
-                Cubrir tarifa de procesamiento (3.2% + $0.30)
-              </label>
-            </div>
+            {/* Note about offerings */}
+            <p className="mt-8 text-center text-sm text-oscuro/60">
+              Tu ofrenda apoya la iglesia de manera general.
+            </p>
 
             {/* Security badge */}
             <div className="mt-6 flex items-center justify-center gap-2 text-sm text-oscuro/50">
@@ -273,16 +240,19 @@ export default function DiezmosPage() {
                   d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
                 />
               </svg>
-              Procesado seguro. Datos encriptados.
+              Procesado seguro con Stripe. Datos encriptados.
             </div>
 
-            {/* Donate button */}
+            {/* Donate button — ready for Stripe integration */}
             <button
               type="button"
               className="mt-6 w-full rounded-xl bg-gradient-to-r from-tierra to-oro py-4 text-xl font-bold text-white shadow-lg transition hover:shadow-xl hover:brightness-110"
             >
-              DONAR AHORA
+              DONAR CON TARJETA
             </button>
+            <p className="mt-2 text-center text-xs text-oscuro/40">
+              Pago procesado de forma segura por Stripe
+            </p>
 
             {/* Confirmation items */}
             <div className="mt-6 space-y-2">
