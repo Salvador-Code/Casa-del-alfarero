@@ -405,7 +405,7 @@ export default function ServiciosPage() {
                         Escuela Dominical &mdash; 9:30 AM
                       </span>
                       <span className="rounded-full bg-verde/10 px-4 py-1.5 font-body text-sm font-semibold text-verde">
-                        Ministerio Infantil (edades ~3-4 a 12)
+                        Ministerio Infantil (edades 4 a 12)
                       </span>
                     </div>
                     <p className="mt-3 font-body text-sm text-oscuro/60 italic">
@@ -620,7 +620,7 @@ export default function ServiciosPage() {
             No Puedes Venir? Unete Online
           </h2>
           <p className="mx-auto mt-4 max-w-xl font-body text-xl text-white/90">
-            En Vivo Domingos 11:00 AM EST
+            En Vivo Solo Domingos 11:00 AM - 2:00 PM (Hora del Este)
           </p>
 
           {/* Buttons */}

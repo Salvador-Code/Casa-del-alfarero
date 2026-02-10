@@ -348,7 +348,7 @@ const sermons: Sermon[] = [
   },
   {
     id: 7,
-    title: "Navidad: Emanuel con Nosotros",
+    title: "Navidad: Emmanuel con Nosotros",
     date: "Diciembre 25, 2025",
     duration: "50 min",
     series: "Especial",

@@ -213,31 +213,27 @@ export default function HomePage() {
 
               <div className="mt-6 space-y-4 text-oscuro/70 leading-relaxed">
                 <p>
-                  Daniela Martinez es la esposa de nuestro pastor, quien vino a apoyar a su suegro,
-                  Roberto Martinez — el fundador que inicio esta iglesia hace mas de 20 anos en el
-                  area de Cobb County. Roberto ha partido con el Senor, pero la iglesia permanece como
-                  un pilar para nuestra comunidad.
+                  El Pastor Emmanuel Lopez dejo una exitosa carrera corporativa en Mexico para
+                  dedicar su vida a Dios. Llego hace aproximadamente 14 anos (alrededor de 2012) para ayudar
+                  a su suegro, Roberto Martinez — el fundador que inicio esta iglesia hace mas de 20 anos
+                  en Powder Springs, viniendo de Monterrey, Mexico. Roberto ha partido con el Senor, y el
+                  Pastor Lopez ahora lidera la congregacion.
                 </p>
                 <p>
-                  Somos una iglesia pequena pero muy unida. El Pastor Emmanuel lidera con ensenanza
-                  biblica solida y un corazon pastoral genuino, ayudando a cada persona a descubrir
-                  el proposito que Dios tiene para ellos.
+                  Trajo a su esposa, Daniela Martinez, y a sus hijos para construir una vida de servicio
+                  aqui. Somos una iglesia pequena pero muy unida, creciendo juntos en fe y comunidad.
                 </p>
               </div>
 
               {/* Stats */}
               <div className="mt-8 flex flex-wrap gap-8 border-t border-oscuro/10 pt-8">
                 <div>
-                  <p className="text-3xl font-bold text-azul">10+</p>
-                  <p className="text-sm text-oscuro/60">Anos de Experiencia</p>
+                  <p className="text-3xl font-bold text-azul">20+</p>
+                  <p className="text-sm text-oscuro/60">Anos de Historia</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-bold text-azul">177</p>
-                  <p className="text-sm text-oscuro/60">Familias Activas</p>
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-azul">223</p>
-                  <p className="text-sm text-oscuro/60">Vidas Transformadas</p>
+                  <p className="text-3xl font-bold text-azul">&hearts;</p>
+                  <p className="text-sm text-oscuro/60">Vidas Cambiadas</p>
                 </div>
               </div>
 

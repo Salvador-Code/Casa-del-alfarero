@@ -214,9 +214,23 @@ export default function DiezmosPage() {
               ))}
             </div>
 
-            <p className="mt-4 text-center text-sm text-oscuro/60">
-              Otro Monto
-            </p>
+            {/* Custom amount input */}
+            <div className="mt-4">
+              <label htmlFor="custom-amount" className="block text-center text-sm font-semibold text-oscuro/60 mb-2">
+                O ingresa otro monto:
+              </label>
+              <div className="relative">
+                <span className="absolute left-4 top-1/2 -translate-y-1/2 text-lg font-bold text-oscuro/40">$</span>
+                <input
+                  type="number"
+                  id="custom-amount"
+                  min="1"
+                  step="0.01"
+                  placeholder="0.00"
+                  className="w-full rounded-lg border-2 border-tierra/30 py-3 pl-8 pr-4 text-center text-lg font-bold text-oscuro outline-none transition focus:border-tierra focus:ring-2 focus:ring-tierra/20"
+                />
+              </div>
+            </div>
 
             {/* Note about offerings */}
             <p className="mt-8 text-center text-sm text-oscuro/60">
@@ -364,7 +378,7 @@ export default function DiezmosPage() {
                     <span className="font-semibold text-azul">
                       cda.atlanta@gmail.com
                     </span>
-                    . Incluye una nota con tu nombre y la designacion del regalo.
+                    . Incluye una nota con tu nombre.
                   </p>
                 </div>
               </div>
@@ -440,83 +454,6 @@ export default function DiezmosPage() {
       </section>
 
       {/* ============================================================
-          SECTION 5 — Impact
-          ============================================================ */}
-      <section className="bg-azul py-20 text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="font-heading text-4xl font-bold md:text-5xl">
-              Donde Va Tu Ofrenda
-            </h2>
-          </div>
-
-          {/* Budget breakdown bars */}
-          <div className="mx-auto mt-14 max-w-3xl space-y-6">
-            {[
-              {
-                label: "Personal Ministerial",
-                pct: 40,
-                color: "bg-oro",
-              },
-              {
-                label: "Instalaciones",
-                pct: 25,
-                color: "bg-tierra",
-              },
-              {
-                label: "Ministerios y Programas",
-                pct: 15,
-                color: "bg-verde",
-              },
-              {
-                label: "Misiones",
-                pct: 10,
-                color: "bg-white/50",
-              },
-              {
-                label: "Ayuda Benevolencia",
-                pct: 5,
-                color: "bg-rojo",
-              },
-              {
-                label: "Administracion",
-                pct: 5,
-                color: "bg-white/30",
-              },
-            ].map((item) => (
-              <div key={item.label}>
-                <div className="mb-2 flex items-center justify-between text-sm">
-                  <span>{item.label}</span>
-                  <span className="font-bold">{item.pct}%</span>
-                </div>
-                <div className="h-4 w-full overflow-hidden rounded-full bg-white/10">
-                  <div
-                    className={`h-full rounded-full ${item.color}`}
-                    style={{ width: `${item.pct}%` }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Impact stats */}
-          <div className="mt-16 grid grid-cols-2 gap-8 lg:grid-cols-4">
-            {[
-              { value: "$247,000", label: "Donado en 2025" },
-              { value: "3,200", label: "Comidas servidas" },
-              { value: "48", label: "Familias asistidas" },
-              { value: "$12,000", label: "Enviado a misiones" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <p className="font-heading text-4xl font-bold">{stat.value}</p>
-                <p className="mt-2 text-sm text-white/70">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================================
           SECTION 6 — FAQ
           ============================================================ */}
       <section className="bg-crema py-20">
@@ -550,8 +487,8 @@ export default function DiezmosPage() {
                 a: "Absolutamente. Nuestra plataforma de donaciones utiliza encriptacion SSL de 256 bits y cumple con los estandares PCI DSS. Tu informacion financiera esta completamente protegida y nunca se almacena en nuestros servidores.",
               },
               {
-                q: "Puedo designar mi ofrenda a un ministerio especifico?",
-                a: "Si. Al momento de donar, puedes seleccionar entre varias opciones de designacion: Diezmo, Ofrenda General, Misiones, Construccion/Mejoras o Ayuda Benevolencia. Si deseas apoyar un proyecto especifico, contactanos.",
+                q: "A donde va mi ofrenda?",
+                a: "Tu ofrenda apoya la iglesia de manera general — desde el mantenimiento de nuestras instalaciones hasta los programas ministeriales. Somos administradores fieles de cada donacion.",
               },
               {
                 q: "Que hago si estoy pasando por dificultades financieras?",

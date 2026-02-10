@@ -171,30 +171,12 @@ function GlobeHandsIcon() {
 const ministries: Ministry[] = [
   {
     category: "NINOS",
-    title: "Ministerio Infantil",
-    audience: "0-5 anos",
+    title: "Escuela Dominical / Ministerio Infantil",
+    audience: "4-12 anos",
     schedule: "Domingos 11:00 AM",
     description:
-      "Un ambiente seguro y amoroso donde los mas pequenos aprenden sobre el amor de Dios a traves de nursery, juegos, historias biblicas y canciones.",
-    icon: <BabyIcon />,
-  },
-  {
-    category: "NINOS",
-    title: "Escuela Dominical",
-    audience: "6-12 anos",
-    schedule: "Domingos 9:30 AM",
-    description:
-      "Lecciones interactivas, manualidades y actividades disenadas para que los ninos descubran la Biblia de manera divertida y significativa.",
+      "Un ambiente seguro y amoroso donde los ninos aprenden sobre el amor de Dios a traves de juegos, historias biblicas, manualidades y canciones. Lecciones interactivas para cada edad.",
     icon: <BookIcon />,
-  },
-  {
-    category: "JOVENES",
-    title: "Ministerio Universitario",
-    audience: "18-25 anos",
-    schedule: "Martes 7:00 PM",
-    description:
-      "Cafe, discusion biblica y comunidad para jovenes adultos navegando la universidad y los primeros anos de carrera profesional.",
-    icon: <GradCapIcon />,
   },
   {
     category: "ADULTOS",

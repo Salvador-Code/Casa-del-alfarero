@@ -79,16 +79,16 @@ const pillars = [
 
 const timelineEvents = [
   {
-    year: "2004",
+    year: "~2004",
     title: "Los Comienzos",
     description:
-      "Roberto Martinez, el fundador, comenzo esta iglesia hace mas de 20 anos en el area de Cobb County, Georgia, con la vision de crear un hogar espiritual para la comunidad hispana.",
+      "Roberto Martinez, originario de Monterrey, Mexico, fundo esta iglesia en el area de Powder Springs / Cobb County, Georgia, con la vision de crear un hogar espiritual para la comunidad hispana.",
   },
   {
-    year: "2015",
-    title: "Crecimiento y Consolidacion",
+    year: "~2012",
+    title: "Llega Pastor Emmanuel",
     description:
-      "La iglesia crecio bajo el liderazgo de Roberto, estableciendose como un pilar para la comunidad hispana en el area metropolitana de Atlanta.",
+      "El Pastor Emmanuel Lopez dejo una exitosa carrera corporativa en Mexico para dedicar su vida a Dios. Llego con su esposa Daniela Martinez y sus hijos para apoyar a su suegro Roberto y ayudar a crecer la iglesia.",
   },
   {
     year: "2020",
@@ -97,31 +97,25 @@ const timelineEvents = [
       "En medio de la pandemia, expandimos nuestro alcance digital, llevando la Palabra de Dios a hogares a traves de plataformas en linea.",
   },
   {
-    year: "2023",
-    title: "Nueva Generacion",
+    year: "Hoy",
+    title: "Continuando el Legado",
     description:
-      "Daniela Martinez, esposa de nuestro pastor, quien vino a apoyar a su suegro Roberto Martinez, continua el legado. Roberto ha partido con el Senor, pero la iglesia sigue siendo un pilar para nuestra comunidad.",
-  },
-  {
-    year: "2026",
-    title: "Familia Unida",
-    description:
-      "Somos una iglesia pequena pero muy unida. Seguimos creciendo juntos en fe, amor y comunidad, honrando el legado de nuestro fundador.",
+      "Roberto ha partido con el Senor, pero la iglesia permanece como un pilar para nuestra comunidad. El Pastor Emmanuel lidera la congregacion. Somos una iglesia pequena pero muy unida, creciendo juntos en fe, amor y comunidad.",
   },
 ];
 
 const smallLeaders = [
   {
     name: "Daniela Martinez",
-    role: "Esposa del Pastor / Lider de Adoracion",
+    role: "Lider de Mujeres / Esposa del Pastor",
     description:
-      "Daniela Martinez es la esposa de nuestro pastor, quien vino a apoyar a su suegro Roberto Martinez, el fundador de esta iglesia. Guia al equipo de alabanza con excelencia y uncion.",
+      "Daniela Martinez es la esposa de nuestro pastor. Lidera el ministerio de mujeres con pasion, creando espacios de discipulado, sanidad emocional y empoderamiento espiritual.",
   },
   {
-    name: "Laysha Rodriguez",
-    role: "Lider de Ministerio de Mujeres",
+    name: "Lider de Musica",
+    role: "Lider de Adoracion",
     description:
-      "Dirige el ministerio de mujeres con pasion, creando espacios de discipulado, sanidad emocional y empoderamiento espiritual para cada mujer.",
+      "Guia al equipo de alabanza con excelencia y uncion, creando atmosferas de adoracion genuina. (Posicion actualmente abierta — contactanos si sientes el llamado.)",
   },
 ];
 
@@ -444,20 +438,23 @@ export default function SobreNosotrosPage() {
                 Pastor Principal
               </span>
               <h3 className="mt-1 font-heading text-3xl font-bold text-oscuro">
-                Pastor Emmanuel
+                Pastor Emmanuel Lopez
               </h3>
               <p className="mt-4 leading-relaxed text-oscuro/70">
-                El Pastor Emmanuel vino a apoyar a su suegro, Roberto
-                Martinez, el fundador que inicio esta iglesia hace mas de 20
-                anos en el area de Cobb County. Roberto ha partido con el
-                Senor, pero la iglesia permanece como un pilar para nuestra
-                comunidad.
+                El Pastor Emmanuel Lopez dejo una exitosa carrera corporativa
+                en Mexico para dedicar su vida a Dios. Llego hace
+                aproximadamente 14 anos para ayudar a su suegro, Roberto
+                Martinez — el fundador que comenzo esta iglesia hace mas de 20
+                anos en Powder Springs, viniendo de Monterrey, Mexico. Roberto
+                ha partido con el Senor, y el Pastor Lopez ahora es nuestro
+                pastor principal.
               </p>
               <p className="mt-4 leading-relaxed text-oscuro/70">
-                Su liderazgo se caracteriza por la ensenanza biblica solida, el
-                amor pastoral genuino y una fe inquebrantable en el poder
-                transformador de Dios. Somos una iglesia pequena pero muy
-                unida.
+                Trajo a su esposa, Daniela Martinez, y a sus hijos para
+                construir una vida de servicio aqui. Su liderazgo se
+                caracteriza por la ensenanza biblica solida, el amor pastoral
+                genuino y una fe inquebrantable. Somos una iglesia pequena
+                pero muy unida.
               </p>
               <blockquote className="mt-6 border-l-4 border-oro pl-4 italic text-oscuro/80">
                 &ldquo;Somos barro en las manos del Maestro Alfarero&rdquo;
