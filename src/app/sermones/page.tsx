@@ -497,7 +497,7 @@ export default function SermonesPage() {
               <div className="relative overflow-hidden rounded-xl shadow-lg aspect-video">
                 <iframe
                   className="absolute inset-0 h-full w-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/4_xqWC_Hcto"
                   title="Preparandonos para Su Venida - Iglesia Casa del Alfarero"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
