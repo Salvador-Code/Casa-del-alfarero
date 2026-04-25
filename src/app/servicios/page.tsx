@@ -253,11 +253,11 @@ export default function ServiciosPage() {
                 <div className="flex-1">
                   <div className="mb-4">
                     <span className="rounded-full bg-tierra/10 px-3 py-1 text-sm font-semibold uppercase tracking-wider text-tierra">
-                      Viernes
+                      Servicio de Entre Semana
                     </span>
                   </div>
                   <h3 className="font-heading text-3xl font-bold text-oscuro">
-                    Viernes
+                    Viernes por la Noche
                   </h3>
                   <p className="font-heading text-4xl font-bold text-oro mt-1">
                     6:30 PM
@@ -346,11 +346,11 @@ export default function ServiciosPage() {
                 <div className="flex-1">
                   <div className="mb-4">
                     <span className="rounded-full bg-azul/10 px-3 py-1 text-sm font-semibold uppercase tracking-wider text-azul">
-                      Domingo
+                      Culto Principal
                     </span>
                   </div>
                   <h3 className="font-heading text-3xl font-bold text-oscuro">
-                    Domingo
+                    Domingo por la Mañana
                   </h3>
                   <p className="font-heading text-4xl font-bold text-oro mt-1">
                     11:00 AM
@@ -668,7 +668,6 @@ export default function ServiciosPage() {
             </p>
             <form
               className="flex flex-col gap-3 sm:flex-row"
-              onSubmit={undefined}
             >
               <input
                 type="email"

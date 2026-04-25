@@ -12,7 +12,7 @@ export default function HomePage() {
 
         <div className="relative z-10 mx-auto max-w-4xl">
           <h1 className="font-heading text-5xl font-bold leading-tight tracking-tight md:text-7xl">
-            Bienvenidos a la Casa del Alfarero!
+            ¡Bienvenidos a la Casa del Alfarero!
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-xl font-light text-white/90 md:text-2xl">
@@ -32,13 +32,13 @@ export default function HomePage() {
               href="#horarios"
               className="inline-flex items-center rounded-full bg-gradient-to-r from-oro to-yellow-500 px-8 py-3.5 text-sm font-semibold text-oscuro shadow-lg transition hover:brightness-110"
             >
-              Unete el Domingo
+              Únete el Domingo
             </a>
             <Link
               href="/sermones"
               className="inline-flex items-center rounded-full border-2 border-white px-8 py-3.5 text-sm font-semibold text-white transition hover:bg-white hover:text-oscuro"
             >
-              Ver Ultimo Sermon
+              Ver Último Sermón
             </Link>
           </div>
         </div>
@@ -99,10 +99,10 @@ export default function HomePage() {
 
                 <h3 className="font-heading text-2xl font-bold text-oscuro">Viernes</h3>
                 <p className="mt-2 text-4xl font-bold text-oro">6:30 PM</p>
-                <p className="mt-3 text-oscuro/70">Oracion y Ensenanza</p>
+                <p className="mt-3 text-oscuro/70">Oración y Enseñanza</p>
 
-                <a
-                  href="#"
+                <Link
+                  href="/servicios"
                   className="mt-6 inline-flex items-center text-sm font-semibold text-azul transition hover:text-azul/80"
                 >
                   <svg
@@ -119,8 +119,8 @@ export default function HomePage() {
                       d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
                     />
                   </svg>
-                  Agregar a Calendario
-                </a>
+                  Ver Detalles del Servicio
+                </Link>
               </div>
             </div>
 
@@ -143,10 +143,12 @@ export default function HomePage() {
 
                 <h3 className="font-heading text-2xl font-bold text-oscuro">Domingo</h3>
                 <p className="mt-2 text-4xl font-bold text-oro">11:00 AM</p>
-                <p className="mt-3 text-oscuro/70">Alabanza, Adoracion y Palabra</p>
+                <p className="mt-3 text-oscuro/70">Alabanza, Adoración y Palabra</p>
 
                 <a
-                  href="#"
+                  href="https://www.google.com/maps/dir/?api=1&destination=4329+Marietta+St,+Powder+Springs,+GA+30127"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-6 inline-flex items-center text-sm font-semibold text-azul transition hover:text-azul/80"
                 >
                   <svg
@@ -168,7 +170,7 @@ export default function HomePage() {
                       d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                     />
                   </svg>
-                  Como Llegar
+                  ¿Cómo Llegar?
                 </a>
               </div>
             </div>
@@ -295,7 +297,7 @@ export default function HomePage() {
               El Alfarero Tiene un Plan para Ti
             </h3>
             <p className="mt-2 text-sm text-white/60">
-              Domingo, 2 de Febrero 2026
+              Domingo, 20 de Abril 2026
             </p>
             <p className="mt-4 text-white/80 leading-relaxed">
               En este poderoso mensaje, el Pastor Emmanuel nos recuerda que Dios, como el gran Alfarero,
@@ -340,46 +342,46 @@ export default function HomePage() {
             {/* Event 1 */}
             <article className="group relative overflow-hidden rounded-xl border border-oscuro/10 bg-white p-6 transition hover:shadow-lg">
               <div className="absolute right-4 top-4 rounded-lg bg-gradient-to-br from-oro to-yellow-500 px-3 py-1.5 text-center shadow">
-                <span className="block text-xs font-bold text-oscuro">FEB</span>
-                <span className="block text-lg font-bold leading-tight text-oscuro">14</span>
+                <span className="block text-xs font-bold text-oscuro">MAY</span>
+                <span className="block text-lg font-bold leading-tight text-oscuro">9</span>
               </div>
               <div className="pt-2">
                 <h3 className="font-heading text-xl font-bold text-oscuro">Noche de Alabanza</h3>
                 <p className="mt-2 text-sm text-oscuro/60">
                   <span className="font-medium">7:00 PM</span> &middot; Santuario Principal
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/ministerios"
                   className="mt-4 inline-flex items-center text-sm font-semibold text-azul transition hover:text-azul/80"
                 >
-                  Mas Info
+                  Más Info
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="ml-1 h-3.5 w-3.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </article>
 
             {/* Event 2 */}
             <article className="group relative overflow-hidden rounded-xl border border-oscuro/10 bg-white p-6 transition hover:shadow-lg">
               <div className="absolute right-4 top-4 rounded-lg bg-gradient-to-br from-oro to-yellow-500 px-3 py-1.5 text-center shadow">
-                <span className="block text-xs font-bold text-oscuro">FEB</span>
-                <span className="block text-lg font-bold leading-tight text-oscuro">21</span>
+                <span className="block text-xs font-bold text-oscuro">MAY</span>
+                <span className="block text-lg font-bold leading-tight text-oscuro">16</span>
               </div>
               <div className="pt-2">
-                <h3 className="font-heading text-xl font-bold text-oscuro">Retiro de Jovenes</h3>
+                <h3 className="font-heading text-xl font-bold text-oscuro">Retiro de Jóvenes</h3>
                 <p className="mt-2 text-sm text-oscuro/60">
                   <span className="font-medium">9:00 AM</span> &middot; Centro de Retiros
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/ministerios"
                   className="mt-4 inline-flex items-center text-sm font-semibold text-azul transition hover:text-azul/80"
                 >
-                  Mas Info
+                  Más Info
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="ml-1 h-3.5 w-3.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </article>
 
@@ -387,45 +389,45 @@ export default function HomePage() {
             <article className="group relative overflow-hidden rounded-xl border border-oscuro/10 bg-white p-6 transition hover:shadow-lg">
               <div className="absolute right-4 top-4 rounded-lg bg-gradient-to-br from-oro to-yellow-500 px-3 py-1.5 text-center shadow">
                 <span className="block text-xs font-bold text-oscuro">CADA</span>
-                <span className="block text-lg font-bold leading-tight text-oscuro">MIE</span>
+                <span className="block text-lg font-bold leading-tight text-oscuro">MIÉ</span>
               </div>
               <div className="pt-2">
-                <h3 className="font-heading text-xl font-bold text-oscuro">Estudio Biblico</h3>
+                <h3 className="font-heading text-xl font-bold text-oscuro">Estudio Bíblico</h3>
                 <p className="mt-2 text-sm text-oscuro/60">
-                  <span className="font-medium">7:00 PM</span> &middot; Salon de Comunion
+                  <span className="font-medium">7:00 PM</span> &middot; Salón de Comunión
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/servicios"
                   className="mt-4 inline-flex items-center text-sm font-semibold text-azul transition hover:text-azul/80"
                 >
-                  Mas Info
+                  Más Info
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="ml-1 h-3.5 w-3.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </article>
 
             {/* Event 4 */}
             <article className="group relative overflow-hidden rounded-xl border border-oscuro/10 bg-white p-6 transition hover:shadow-lg">
               <div className="absolute right-4 top-4 rounded-lg bg-gradient-to-br from-oro to-yellow-500 px-3 py-1.5 text-center shadow">
-                <span className="block text-xs font-bold text-oscuro">MAR</span>
-                <span className="block text-lg font-bold leading-tight text-oscuro">1</span>
+                <span className="block text-xs font-bold text-oscuro">JUN</span>
+                <span className="block text-lg font-bold leading-tight text-oscuro">7</span>
               </div>
               <div className="pt-2">
                 <h3 className="font-heading text-xl font-bold text-oscuro">Desayuno de Hombres</h3>
                 <p className="mt-2 text-sm text-oscuro/60">
-                  <span className="font-medium">8:00 AM</span> &middot; Salon de Eventos
+                  <span className="font-medium">8:00 AM</span> &middot; Salón de Eventos
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/ministerios"
                   className="mt-4 inline-flex items-center text-sm font-semibold text-azul transition hover:text-azul/80"
                 >
-                  Mas Info
+                  Más Info
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="ml-1 h-3.5 w-3.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </article>
           </div>
@@ -495,7 +497,7 @@ export default function HomePage() {
       <section className="bg-tierra py-20 text-white md:py-24">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="font-heading text-4xl font-bold md:text-5xl">
-            Listo para Dar el Siguiente Paso?
+            ¿Listo para Dar el Siguiente Paso?
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80 leading-relaxed">
@@ -508,13 +510,13 @@ export default function HomePage() {
               href="#horarios"
               className="inline-flex items-center rounded-full bg-gradient-to-r from-oro to-yellow-500 px-8 py-3.5 text-sm font-semibold text-oscuro shadow-lg transition hover:brightness-110"
             >
-              Visitanos
+              Visítanos
             </a>
             <Link
               href="/contacto"
               className="inline-flex items-center rounded-full border-2 border-white px-8 py-3.5 text-sm font-semibold text-white transition hover:bg-white hover:text-tierra"
             >
-              Peticiones de Oracion
+              Peticiones de Oración
             </Link>
             <Link
               href="/ministerios"

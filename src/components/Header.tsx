@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "Inicio", href: "/" },
@@ -78,6 +79,7 @@ function PotteryIcon({ className = "h-10 w-10" }: { className?: string }) {
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
@@ -108,17 +110,26 @@ export default function Header() {
 
         {/* ---- Desktop Navigation (center) ---- */}
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="group relative px-3 py-2 font-body text-sm font-medium text-oscuro transition-colors duration-200 hover:text-tierra xl:px-4"
-            >
-              {link.label}
-              {/* Animated underline */}
-              <span className="absolute bottom-0 left-1/2 h-0.5 w-0 -translate-x-1/2 rounded-full bg-tierra transition-all duration-300 ease-out group-hover:w-3/4" />
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                aria-current={isActive ? "page" : undefined}
+                className={`group relative px-3 py-2 font-body text-sm font-medium transition-colors duration-200 xl:px-4 ${
+                  isActive ? "text-tierra" : "text-oscuro hover:text-tierra"
+                }`}
+              >
+                {link.label}
+                <span
+                  className={`absolute bottom-0 left-1/2 h-0.5 -translate-x-1/2 rounded-full bg-tierra transition-all duration-300 ease-out ${
+                    isActive ? "w-3/4" : "w-0 group-hover:w-3/4"
+                  }`}
+                />
+              </Link>
+            );
+          })}
         </nav>
 
         {/* ---- Desktop CTA Button (right) ---- */}
@@ -220,17 +231,23 @@ export default function Header() {
         {/* Mobile Nav Links */}
         <nav className="flex-1 overflow-y-auto px-4 py-6" aria-label="Mobile">
           <ul className="flex flex-col gap-1">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center rounded-lg px-4 py-3.5 font-body text-base font-medium text-oscuro transition-all duration-200 hover:bg-crema/30 hover:text-tierra active:bg-crema/50"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    aria-current={isActive ? "page" : undefined}
+                    className={`flex items-center rounded-lg px-4 py-3.5 font-body text-base font-medium transition-all duration-200 hover:bg-crema/30 hover:text-tierra active:bg-crema/50 ${
+                      isActive ? "bg-crema/40 font-semibold text-tierra" : "text-oscuro"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
 

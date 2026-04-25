@@ -300,72 +300,72 @@ interface Sermon {
 const sermons: Sermon[] = [
   {
     id: 1,
-    title: "Preparandonos para Su Venida",
-    date: "Febrero 1, 2026",
-    duration: "42 min",
-    series: "Vigilancia Espiritual",
-    gradient: "from-azul to-oscuro",
+    title: "El Alfarero Tiene un Plan para Ti",
+    date: "Abril 20, 2026",
+    duration: "44 min",
+    series: "Moldeados por Sus Manos",
+    gradient: "from-tierra to-oro",
   },
   {
     id: 2,
+    title: "Resistiendo en el Desierto",
+    date: "Abril 13, 2026",
+    duration: "40 min",
+    series: "Moldeados por Sus Manos",
+    gradient: "from-azul to-oscuro",
+  },
+  {
+    id: 3,
+    title: "La Gracia que Sostiene",
+    date: "Abril 6, 2026",
+    duration: "38 min",
+    series: "Moldeados por Sus Manos",
+    gradient: "from-oscuro to-azul",
+  },
+  {
+    id: 4,
+    title: "Resurrección: Vida Nueva",
+    date: "Marzo 29, 2026",
+    duration: "52 min",
+    series: "Especial Resurrección",
+    gradient: "from-oro to-tierra",
+  },
+  {
+    id: 5,
+    title: "La Semana Santa Transformadora",
+    date: "Marzo 22, 2026",
+    duration: "45 min",
+    series: "Especial Resurrección",
+    gradient: "from-rojo to-oscuro",
+  },
+  {
+    id: 6,
+    title: "Preparandonos para Su Venida",
+    date: "Marzo 15, 2026",
+    duration: "42 min",
+    series: "Vigilancia Espiritual",
+    gradient: "from-azul/80 to-oscuro",
+  },
+  {
+    id: 7,
     title: "El Precio de la Obediencia",
-    date: "Enero 26, 2026",
+    date: "Marzo 8, 2026",
     duration: "38 min",
     series: "Vigilancia Espiritual",
     gradient: "from-oscuro to-azul",
   },
   {
-    id: 3,
-    title: "Senales de los Tiempos",
-    date: "Enero 19, 2026",
-    duration: "45 min",
-    series: "Vigilancia Espiritual",
-    gradient: "from-azul/80 to-oscuro",
-  },
-  {
-    id: 4,
+    id: 8,
     title: "Amor que Restaura",
-    date: "Enero 12, 2026",
+    date: "Marzo 1, 2026",
     duration: "40 min",
     series: "Familia segun Dios",
-    gradient: "from-tierra to-oro",
-  },
-  {
-    id: 5,
-    title: "La Paciencia de Cristo",
-    date: "Enero 5, 2026",
-    duration: "35 min",
-    series: "El Caracter de Cristo",
     gradient: "from-verde to-azul",
-  },
-  {
-    id: 6,
-    title: "Perdonar como El Perdono",
-    date: "Diciembre 29, 2025",
-    duration: "41 min",
-    series: "El Caracter de Cristo",
-    gradient: "from-azul to-verde",
-  },
-  {
-    id: 7,
-    title: "Navidad: Emanuel con Nosotros",
-    date: "Diciembre 25, 2025",
-    duration: "50 min",
-    series: "Especial",
-    gradient: "from-rojo to-oro",
-  },
-  {
-    id: 8,
-    title: "Gratitud en Todo Tiempo",
-    date: "Diciembre 22, 2025",
-    duration: "37 min",
-    series: "Especial",
-    gradient: "from-oro to-tierra",
   },
   {
     id: 9,
     title: "Fe que Mueve Montanas",
-    date: "Diciembre 15, 2025",
+    date: "Febrero 22, 2026",
     duration: "43 min",
     series: "Fundamentos de Fe",
     gradient: "from-tierra to-oscuro",
@@ -374,28 +374,28 @@ const sermons: Sermon[] = [
 
 const seriesData = [
   {
-    title: "Vigilancia Espiritual",
-    progress: "Parte 3 de 6",
-    fraction: 3 / 6,
-    gradient: "from-azul to-oscuro",
+    title: "Moldeados por Sus Manos",
+    progress: "Parte 3 de 8",
+    fraction: 3 / 8,
+    gradient: "from-tierra to-oro",
     complete: false,
+    count: 8,
+  },
+  {
+    title: "Vigilancia Espiritual",
+    progress: "Parte 6 de 6",
+    fraction: 1,
+    gradient: "from-azul to-oscuro",
+    complete: true,
     count: 6,
   },
   {
     title: "Familia segun Dios",
     progress: "Parte 5 de 8",
     fraction: 5 / 8,
-    gradient: "from-tierra to-oro",
+    gradient: "from-verde to-azul",
     complete: false,
     count: 8,
-  },
-  {
-    title: "El Caracter de Cristo",
-    progress: "Completa",
-    fraction: 1,
-    gradient: "from-verde to-azul",
-    complete: true,
-    count: 12,
   },
 ];
 
@@ -507,33 +507,33 @@ export default function SermonesPage() {
 
             {/* Info (2 cols) */}
             <div className="flex flex-col justify-center lg:col-span-2">
-              <span className="mb-4 inline-block w-fit rounded-full bg-azul/10 px-4 py-1 text-sm font-semibold text-azul">
-                Serie: Vigilancia Espiritual
+              <span className="mb-4 inline-block w-fit rounded-full bg-tierra/10 px-4 py-1 text-sm font-semibold text-tierra">
+                Serie: Moldeados por Sus Manos
               </span>
               <h3 className="font-heading text-2xl font-bold text-oscuro sm:text-3xl">
-                Preparandonos para Su Venida
+                El Alfarero Tiene un Plan para Ti
               </h3>
               <p className="mt-3 flex items-center gap-3 text-sm text-gray-500">
                 <span className="flex items-center gap-1">
                   <CalendarIcon className="w-4 h-4" />
-                  Febrero 1, 2026
+                  Abril 20, 2026
                 </span>
                 <span className="text-gray-300">|</span>
                 <span className="flex items-center gap-1">
                   <ClockIcon className="w-4 h-4" />
-                  42 min
+                  44 min
                 </span>
               </p>
               <p className="mt-3 flex items-center gap-1.5 text-sm font-medium text-oro">
                 <ScriptureIcon className="w-4 h-4" />
-                Mateo 24:36-44
+                Jeremías 18:1-6
               </p>
               <p className="mt-5 text-gray-600 leading-relaxed font-body">
-                En este poderoso mensaje, exploramos las palabras de Jesus sobre
-                la importancia de estar preparados para Su segunda venida. A
-                traves de las escrituras, descubrimos como vivir cada dia con
-                proposito, vigilancia y esperanza, manteniendo nuestras lamparas
-                encendidas mientras esperamos al Senor.
+                En este poderoso mensaje, el Pastor Emmanuel nos recuerda que
+                Dios, como el gran Alfarero, tiene un propósito único para cada
+                uno de nosotros. Aunque las pruebas nos moldean, Su mano nunca
+                nos suelta. Descubrimos cómo rendirnos al proceso de Dios con
+                confianza y esperanza.
               </p>
 
               {/* Share Buttons */}

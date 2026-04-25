@@ -2,9 +2,11 @@ import Link from "next/link";
 
 const navigationLinks = [
   { href: "/sobre-nosotros", label: "Sobre Nosotros" },
+  { href: "/servicios", label: "Servicios" },
   { href: "/ministerios", label: "Ministerios" },
   { href: "/sermones", label: "Sermones" },
-  { href: "/blog", label: "Blog / Recursos" },
+  { href: "/diezmos", label: "Diezmos" },
+  { href: "/contacto", label: "Contacto" },
 ];
 
 const scheduleItems = [

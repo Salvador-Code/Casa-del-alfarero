@@ -5,6 +5,14 @@ export const metadata: Metadata = {
   title: "Sobre Nosotros | Iglesia Casa del Alfarero",
   description:
     "Conoce la historia, mision, liderazgo y creencias de Iglesia Casa del Alfarero en Powder Springs, Georgia.",
+  openGraph: {
+    title: "Sobre Nosotros | Iglesia Casa del Alfarero",
+    description:
+      "Fundada en 2015 por el Pastor Emmanuel Lopez, Casa del Alfarero es una familia de fe hispana con 177 familias activas en Powder Springs, GA.",
+    type: "website",
+    locale: "es_ES",
+    siteName: "Iglesia Casa del Alfarero",
+  },
 };
 
 /* ------------------------------------------------------------------ */

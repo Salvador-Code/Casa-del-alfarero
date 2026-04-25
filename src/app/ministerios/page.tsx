@@ -272,49 +272,49 @@ interface CalendarEvent {
 
 const upcomingEvents: CalendarEvent[] = [
   {
-    date: "14",
-    day: "Feb 14",
-    month: "Feb",
+    date: "2",
+    day: "May 2",
+    month: "May",
+    title: "Estudio Bíblico",
+    time: "7:00 PM",
+    location: "Salón de Comunión",
+  },
+  {
+    date: "9",
+    day: "May 9",
+    month: "May",
     title: "Noche de Alabanza",
     time: "7:00 PM",
     location: "Santuario Principal",
   },
   {
-    date: "21",
-    day: "Feb 21",
-    month: "Feb",
-    title: "Retiro de Jovenes",
-    time: "Todo el dia",
+    date: "16",
+    day: "May 16",
+    month: "May",
+    title: "Retiro de Jóvenes",
+    time: "9:00 AM",
     location: "Camp Georgia",
   },
   {
-    date: "28",
-    day: "Feb 28",
-    month: "Feb",
+    date: "24",
+    day: "May 24",
+    month: "May",
     title: "Taller de Matrimonios",
     time: "6:00 PM",
-    location: "Salon Fellowship",
+    location: "Salón Fellowship",
   },
   {
-    date: "1",
-    day: "Mar 1",
-    month: "Mar",
+    date: "7",
+    day: "Jun 7",
+    month: "Jun",
     title: "Desayuno de Hombres",
     time: "8:00 AM",
     location: "Cocina",
   },
   {
-    date: "8",
-    day: "Mar 8",
-    month: "Mar",
-    title: "Conferencia de Mujeres",
-    time: "9:00 AM",
-    location: "Santuario",
-  },
-  {
-    date: "15-17",
-    day: "Mar 15-17",
-    month: "Mar",
+    date: "13-15",
+    day: "Jun 13-15",
+    month: "Jun",
     title: "Retiro de Familias",
     time: "Fin de semana completo",
     location: "Camp Georgia",
@@ -495,7 +495,7 @@ export default function MinisteriosPage() {
           <div className="mt-10 flex items-center justify-center gap-3">
             <span className="h-px w-12 bg-oro" aria-hidden="true" />
             <span className="font-heading text-xl font-semibold text-oscuro">
-              Febrero 2026
+              Mayo — Junio 2026
             </span>
             <span className="h-px w-12 bg-oro" aria-hidden="true" />
           </div>
@@ -562,7 +562,7 @@ export default function MinisteriosPage() {
               </h3>
 
               <p className="mt-2 font-body text-lg font-semibold text-white/90">
-                Marzo 15-17 | Camp Georgia
+                Junio 13-15 | Camp Georgia
               </p>
 
               <p className="mt-4 max-w-xl font-body leading-relaxed text-white/85">
@@ -587,10 +587,10 @@ export default function MinisteriosPage() {
                 </div>
                 <div>
                   <p className="font-body text-xs font-semibold uppercase tracking-wider text-oscuro/50">
-                    Fecha limite de registro
+                    Fecha límite de registro
                   </p>
                   <p className="mt-1 font-heading text-xl font-bold text-oscuro">
-                    Feb 28, 2026
+                    May 30, 2026
                   </p>
                 </div>
                 <div>
